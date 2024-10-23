@@ -1,11 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ephesis&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
 
 @media (prefers-color-scheme: dark) {
   :root {
@@ -14,8 +13,35 @@
   }
 }
 
+/* Apply CSS variables */
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* DaisyUI utility classes can be used directly in your components */
+
+.ephesis-regular {
+  font-family: "Ephesis", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.playfair-display {
+  font-family: 'Playfair Display', serif;
+}
+
+:root {
+  --primary: #4883e4;
+  --secondary: #f06152;
+  --accent: #F6D860;
+  --neutral: #262931;
+  --base-100: #f7f4ec;
+  --base-200: #d7d4cd;
+  --base-300: #b7b5af;
+  --info: #2563EB;
+  --success: #16A34A;
+  --warning: #D97706;
+  --error: #DC2626;
 }
