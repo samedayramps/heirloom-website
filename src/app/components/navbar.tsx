@@ -84,7 +84,7 @@ export default function Navbar() {
         </ul>
       </div>
       <div className="navbar-end">
-        <a className="btn rounded-full bg-accent text-accent-content">GET IN TOUCH</a>
+        <a className="btn rounded-full bg-accent text-accent-content">CONTACT</a>
       </div>
     </motion.div>
   );
